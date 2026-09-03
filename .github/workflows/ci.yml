@@ -16,11 +16,11 @@ jobs:
       # The output variable "ods_pipeline" is set to true if any relevant files have changed, and false otherwise.
       ods_pipeline: ${{ steps.filter.outputs.ods_pipeline }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262   ## ref V4
 
       - name: Detect relevant changes
         id: filter
-        uses: dorny/paths-filter@v3
+        uses: dorny/paths-filter@ceb8a2b8f2d89434be7ff52d3de7ec3738c5cc9d   ## Ref v3
         with:
           # The "ods_pipeline" filter checks for changes in the following files and directories:
           filters: |
