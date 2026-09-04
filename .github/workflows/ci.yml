@@ -16,7 +16,7 @@ jobs:
       # The output variable "ods_pipeline" is set to true if any relevant files have changed, and false otherwise.
       ods_pipeline: ${{ steps.filter.outputs.ods_pipeline }}
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262   ## ref V4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   ## ref V7.0.1
 
       - name: Detect relevant changes
         id: filter
